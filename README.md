@@ -10,10 +10,16 @@ Insane Engine Swaps for BeamNG Drive stock cars.
 - ETK800 Series
 - 200BX
 
+
 # What Still Needs Work?
 - ETK I Series Semi Engine: Drivetrain is broken and breaks the other ETK I Series configurations
 - Covet: Catches on fire
 - (etkc) ETK K Series: Not working
+
+
+# Planned: 
+- Supra sound mods
+
 
 # How to Install Mods?
 1) Download the .jbeam file. 
