@@ -6,7 +6,7 @@ Insane Engine Swaps for BeamNG Drive stock cars.
 
 # What works?
 
-All of the V8 engine swaps work.
+All of the V8 engine swaps work. Except Etkc_engine_v8
 
 # What does not work?
 
