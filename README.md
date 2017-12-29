@@ -1,4 +1,4 @@
-# SkidMarks-BeamNGMods 
+# BETA - SkidMarks-BeamNGMods 
 
 Works on V 0.11.0.2 and later
 
@@ -13,7 +13,7 @@ Insane Engine Swaps for BeamNG Drive stock cars.
 # What Still Needs Work?
 - ETK I Series Semi Engine: Drivetrain is broken and breaks the other ETK I Series configurations
 - Covet: Catches on fire
-- ETK K Series: Not working
+- (etkc) ETK K Series: Not working
 
 # How to Install Mods?
 1) Download the .jbeam file. 
