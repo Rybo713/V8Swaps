@@ -26,6 +26,8 @@ Insane Engine Swaps for BeamNG Drive stock cars.
 8) Enable mods in BeamNG Drive 
 9) Enjoy!
 
-By: Ryan Wong 
+By: Ryan Wong and Greg Ocol
 
 Follow me for updates on Twitter @RyanW713
+
+Please don't rip off any code. If you do, please credit @RyanW713 and Greg Ocol
