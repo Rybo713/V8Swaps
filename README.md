@@ -40,6 +40,17 @@ Insane Engine Swaps for BeamNG Drive stock cars.
 
 9) Enjoy!
 
+**OR**
+
+1) Go to [Releases] (https://github.com/Rybo713/SkidMarks-BeamNGMods/releases)
+
+2) Download the zip file(s)
+
+3) Place the zip file(s) into C:\Users\ "your_username"\Documents\BeamNG.drive\mods
+
+4) Enable mods in BeamNG Drive
+
+5) Enjoy!
 
 # Credits
 By: Ryan Wong and Greg Ocol
