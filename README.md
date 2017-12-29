@@ -11,7 +11,7 @@ Insane Engine Swaps for BeamNG Drive stock cars.
 - 200BX
 
 # What Still Needs Work?
-- ETK I Series Semi Engine: Wheels aren't turning and breaks the other ETK I Series configurations
+- ETK I Series Semi Engine: Drivetrain is broken and breaks the other ETK I Series configurations
 - Covet: Catches on fire
 - ETK K Series: Not working
 
