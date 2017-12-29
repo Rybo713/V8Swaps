@@ -28,7 +28,7 @@ Insane Engine Swaps for BeamNG Drive stock cars.
 
 6) Place the folder "vehicles" in the zip file.
 
-7) Place the zip file into C:\Users\"your_username"\Documents\BeamNG.drive\mods
+7) Place the zip file into C:\Users\ "your_username"\Documents\BeamNG.drive\mods
 
 8) Enable mods in BeamNG Drive 
 
