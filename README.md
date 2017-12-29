@@ -4,6 +4,14 @@ Works on V 0.11.0.2 and later
 
 Insane Engine Swaps for BeamNG Drive stock cars. 
 
+**Description of V8:**
+
+3.9L Race V8 Engine
+
+Max RPM: 12000
+
+Twin Turbos 
+
 # What Works?
 - ETK I Series
 - Ibishu Pessima
