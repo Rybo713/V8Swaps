@@ -14,19 +14,23 @@ Twin Turbos
 
 # What Works?
 - ETK I Series
-- Ibishu Pessima
+- '91 Ibishu Pessima
 - ETK800 Series
 - 200BX
 
 
 # What Still Needs Work?
 - ETK I Series Semi Engine: Drivetrain is broken and breaks the other ETK I Series configurations
-- Covet: Catches on fire
+- Ibishu Covet: Catches on fire
 - (etkc) ETK K Series: Not working
 
 
 # Planned: 
 - Supra sound mods
+- V8 Sunburst
+- V8 Legran
+- V8 Hopper
+- V8 '99 Ibishu Pessima
 
 
 # How to Install Mods?
