@@ -5,13 +5,15 @@ Works on V 0.11.0.2 and later
 Insane Engine Swaps for BeamNG Drive stock cars. 
 
 # What works?
+- ETK I Series
+- Ibishu Pessima
+- ETK800 Series
+- 200BX
 
-All of the V8 engine swaps work. Except Etkc_engine_v8
-
-# What does not work?
-
-The ETK I Semi does not work as for right now. 
-
+# What Still Needs Work?
+- ETK I Series Semi Engine: Wheels aren't turning and breaks the other ETK I Series configurations
+- Covet: Catches on fire
+- ETK K Series: Not working
 
 By: Ryan Wong 
 
