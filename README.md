@@ -1,5 +1,7 @@
 # SkidMarks-BeamNGMods 
 
+Works on V 0.11.0.2 and later
+
 Insane Engine Swaps for BeamNG Drive stock cars. 
 
 # What works?
