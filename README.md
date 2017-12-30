@@ -5,7 +5,7 @@ Works on v0.6 and later
 Insane Engine Swaps for BeamNG Drive stock cars.
 Maybe some engine sounds if you're lucky :)
 
-**Description of V8:**
+<h3>Description of V8:</h3>
 
 3.9L Race V8 Engine from Civetta Bolide
 
@@ -16,7 +16,7 @@ Custom Linear Torque Curve
 Twin Turbos from Gavril D-Series
 
 
-**Description of Semi:**
+<h3>Description of Semi:</h3>
 
 A custom Gavril TCX Engine by AdamB
 
