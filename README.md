@@ -69,5 +69,5 @@ By: Ryan Wong and Gregory Ocol and Adam B (Gavrii TCX Engine)
 
 Follow me on Twitter @RyanW713 for updates!
 
-Everythig is open source. Credit @RyanW713 and @CanadianGreg and Adam B if code is copied
+Everything is open source. Credit @RyanW713 and @CanadianGreg and Adam B if code is copied
 No re-uploads.
