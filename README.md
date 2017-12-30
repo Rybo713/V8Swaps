@@ -31,6 +31,7 @@ Twin Turbos
 - V8 Legran
 - V8 Hopper
 - V8 '99 Ibishu Pessima
+- V8 Pigeon
 
 
 # How to Install Mods?
