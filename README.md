@@ -28,24 +28,24 @@ Custom turbos from ETK I-Series
 
 
 # What Works?
-- Ibishu Covet
-- ETK I-Series
-- '91 Ibishu Pessima
-- ETK800 Series
-- 200BX
-- (etkc) ETK K-Series
-- Sunburst
+- V8 Ibishu Covet
+- V8 ETK I-Series
+- V8 '91 Ibishu Pessima
+- V8 ETK800 Series
+- V8 200BX
+- V8 (etkc) ETK K-Series
+- V8 Sunburst
+- V8 Legran
 
 # What's in Progress?
 - Supra Sounds (2JZ)
-- V8 Legran
+- V8 Hopper
 
 # What Still Needs Work?
 - ETK I-Series Semi Engine: Engine flies out when locked up while high rpm usage (not planning to fix due to fun factor)
 - V8 Pigeon: Engine is disabled and position of engine is very off
 
 # Planned: 
-- V8 Hopper
 - V8 '99 Ibishu Pessima
 
 # How to Install Mods?
