@@ -8,15 +8,23 @@ Maybe some engine sounds if you're lucky :)
 **Description of V8:**
 
 3.9L Race V8 Engine from Civetta Bolide
+
 Max RPM: 12000
+
 Custom Linear Torque Curve
+
 Twin Turbos from Gavril D-Series
+
 
 **Description of Semi:**
 A custom Gavril TCX Engine by AdamB
+
 Max RPM: 12000
-Custom Linear Torqu Curve
+
+Custom Linear Torque Curve
+
 Custom turbos from ETK I-Series
+
 
 # What Works?
 - Ibishu Covet
