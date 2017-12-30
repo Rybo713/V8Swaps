@@ -34,17 +34,17 @@ Custom turbos from ETK I-Series
 - ETK800 Series
 - 200BX
 - (etkc) ETK K-Series
+- Sunburst
 
 # What's in Progress?
 - Supra Sounds (2JZ)
-- V8 Sunburst
+- V8 Legran
 
 # What Still Needs Work?
 - ETK I-Series Semi Engine: Engine flies out when locked up while high rpm usage (not planning to fix due to fun factor)
 - V8 Pigeon: Engine is disabled and position of engine is very off
 
 # Planned: 
-- V8 Legran
 - V8 Hopper
 - V8 '99 Ibishu Pessima
 
