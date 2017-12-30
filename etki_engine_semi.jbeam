@@ -1,0 +1,306 @@
+{
+"etki_engine_semi": {
+    "information":{
+        "authors":"BeamNG, Ryan W, Greg O",
+        "name":"Gavril TCX I6 Diesel Engine",
+        "value":6000,
+    }
+    "slotType" : "etki_engine",
+    "slots": [
+        ["type", "default", "description"]
+        ["etki_transmission","etki_transmission_5M", "Transmission"],
+        //["etki_intake_2.4","etki_intake_2.4", "Intake",{"coreSlot":true}],
+        //["etki_exhaust","etki_exhaust", "Exhaust"],
+    ],
+    "powertrain": [
+        ["type", "name", "inputName", "inputIndex"],
+        ["combustionEngine", "mainEngine", "dummy", 0],
+    ],
+    "mainEngine": {
+        "torque":[
+            ["rpm", "torque"]
+            [0, 0],			
+            [200, 400],
+            [500, 525],
+            [750, 580],
+            [1000, 595],
+            [1200, 600],
+            [1500, 600],
+            [1800, 630],
+            [2200, 660],
+            [2500, 700],
+            [3000, 750],
+            [4500, 800],
+            [5500, 900],
+            [6500, 1000],
+            [7500, 1100],
+            [8500, 1200],
+            [9500, 1300],
+            [10500, 1400],			
+        ],
+
+        "idleRPM":450,
+        "maxRPM":10500,
+        "hasRevLimiter":false,
+        "inertia":2,
+        "friction":40
+        "dynamicFriction":0.2
+        //"burnEfficiency":0.35
+        "burnEfficiency":[
+            [0, 0.25],
+            [0.05, 0.35],
+            [0.4, 0.47],
+            [0.7, 0.44],
+            [1, 0.42],
+        ],
+        "torqueReactionNodes:":["en4l","en3l","en1r"]
+        "particulates":0.3
+        "energyStorage": ["mainTank"],
+        "requiredEnergyType":"diesel",
+
+        //cooling and oil system
+        "thermalsEnabled":true
+        "engineBlockMaterial":"iron"
+        "oilVolume":25
+
+        //engine durability
+        "cylinderWallTemperatureDamageThreshold":160
+        "headGasketDamageThreshold":1500000
+        "pistonRingDamageThreshold":1500000
+        "connectingRodDamageThreshold":1500000
+        
+        "maxTorqueRating": 4000,
+        "maxOverTorqueDamage": 1500,
+
+        //node beam interface
+        "waterDamage": {"[engineGroup]:":["semi_engine_intake"]}
+        "radiator": {"[engineGroup]:":["semi_radiator"]}
+        "engineBlock": {"[engineGroup]:":["semi_engine_block"]}
+        "breakTriggerBeam":"engine",
+
+        "soundConfig": "soundConfig",
+    },
+    "soundConfig": {
+        "sampleName": "L6",
+        "mainGain": 15,
+        "maxLoadMix": 1,
+        "minLoadMix": 0.0,
+        "onLoadGain":1,
+        "offLoadGain":0.9,
+        "eqLowGain": -10,
+        "eqLowFreq": 200,
+        //"eqLowWidth": 0.1,
+        //"eqHighGain": -5,
+        //"eqHighFreq": 4000,
+        //"eqHighWidth": 0.1,
+        "lowCutFreq":100,
+        "eqFundamentalGain": -15,
+    },	
+    "vehicleController": {
+        "clutchLaunchStartRPM":800,
+        "clutchLaunchTargetRPM":1200,
+        //**highShiftDown can be overwritten by automatic transmissions**
+        "highShiftDownRPM":1000
+        //**highShiftUp can be overwritten by intake modifications**
+        "highShiftUpRPM":2000
+    },
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["semi_engine", ["etki_engine"]],
+         ["semi_radtube_R", ["semi_engine","semi_radiator","semi_radtube_R"]],
+         ["semi_radtube_L", ["semi_engine","semi_radiator","semi_radtube_L"]],
+         ["semi_airfilter_ypipe", ["semi_airfilter_ypipe","semi_daycab_cowl","semi_engine_intake"]],
+    ],
+    "props": [
+        ["func"      , "mesh"              , "idRef:", "idX:", "idY:"            , "baseRotation"        , "rotation"                 , "translation"        , "min", "max", "offset", "multiplier"]
+        ["radiatorFanSpin"  , "semi_coolingfan", "en2r","en2l","en4r",  {"x":0, "y":0, "z":0}, {"x":0, "y":1, "z":0}    , {"x":0, "y":0, "z":0}, -360, 360, 0, 1],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         {"selfCollision":true}
+         {"collision":true}
+         //--ENGINE CUBE--
+         {"nodeWeight":142.8},
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"group":"etki_engine"},
+         {"engineGroup":"semi_engine_block"}
+         ["en1r", -0.24, -3.73, 0.65,{"isExhaust":"mainEngine","chemEnergy":1000,"burnRate":0.39,"flashPoint":700,"specHeat": 0.1,"selfIgnitionCoef":false,"smokePoint":600,"baseTemp":"thermals","conductionRadius":0.21}],
+         ["en1l", 0.24, -3.73, 0.65],
+         {"engineGroup":["semi_engine_block","semi_exhaust_manifold"]},
+         ["en2r", -0.24, -2.52, 0.48,{"chemEnergy":1000,"burnRate":0.39,"flashPoint":700,"specHeat": 0.1,"selfIgnitionCoef":false,"smokePoint":600,"baseTemp":"thermals","conductionRadius":0.21}],
+         {"engineGroup":"semi_engine_block"},
+         ["en2l", 0.24, -2.52, 0.48],
+         ["en3r", -0.24, -3.73, 1.52,{"chemEnergy":1000,"burnRate":0.39,"flashPoint":700,"specHeat": 0.1,"selfIgnitionCoef":false,"smokePoint":600,"baseTemp":"thermals","conductionRadius":0.21}],
+         ["en3l", 0.24, -3.73, 1.52],
+         ["en4r", -0.24, -2.52, 1.52,{"chemEnergy":1000,"burnRate":0.39,"flashPoint":700,"specHeat": 0.1,"selfIgnitionCoef":false,"smokePoint":600,"baseTemp":"thermals","conductionRadius":0.21}],
+         ["en4l", 0.24, -2.52, 1.52],
+         ["enf", -0.0, -3.8, 1.33],
+         {"engineGroup":""},
+         {"group":"semi_airfilter_ypipe"},
+         {"nodeWeight":5.1},
+         ["afyp", -0.15500, -2.75000, 1.70000],
+         {"selfCollision":true}
+         {"collision":true}
+         {"engineGroup":"semi_engine_intake"}
+         {"group":"semi_radtube_R"},
+         ["en5r", -0.45, -3.24, 1.4,{"chemEnergy":200,"burnRate":0.3,"flashPoint":200,"specHeat":0.1,"smokePoint":150,"selfIgnitionCoef":false}],
+         {"group":"semi_radtube_L"},
+         {"engineGroup":"semi_engine_block"}
+         ["en5l", 0.3, -3.4, 1.30],
+         {"engineGroup":""}
+         {"selfCollision":true}
+         {"collision":true}
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //--ENGINE CUBE--
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+          {"beamSpring":32000800,"beamDamp":1600},
+          {"beamDeform":1500000,"beamStrength":"FLT_MAX"},
+          ["en1r","en1l"],
+          ["en1r","en1l"],
+          ["en1r","en2r"{"isExhaust":"mainEngine"}],
+          ["en1r","en2l"],
+          ["en1r","en3r"],
+          ["en1r","en3l"],
+          ["en1r","en4r"],
+          ["en1r","en4l"],
+          ["en1l","en2r"],
+          ["en1l","en2l"],
+          ["en1l","en3r"],
+          ["en1l","en3l"],
+          ["en1l","en4r"],
+          ["en1l","en4l"],
+          ["en2r","en2l"],
+          ["en2r","en3r"],
+          ["en2r","en3l"],
+          ["en2r","en4r"],
+          ["en2r","en4l"],
+          ["en2l","en3r"],
+          ["en2l","en3l"],
+          ["en2l","en4r"],
+          ["en2l","en4l"],
+          ["en3r","en3l"],
+          ["en3r","en4r"],
+          ["en3r","en4l"],
+          ["en3l","en4r"],
+          ["en3l","en4l"],
+          ["en4r","en4l"],
+          ["enf","en4l"],
+          ["enf","en4r"],
+          ["enf","en3l"],
+          ["enf","en3r"],
+          ["enf","en1l"],
+          ["enf","en1r"],
+          {"beamDeform":25000,"beamStrength":"FLT_MAX"}
+          {"beamSpring":320800,"beamDamp":400},
+          //air filter piping attach
+          {"optional":true},
+          ["afyp","dc1rr"],
+          ["afyp","dc1ll"],
+          ["afyp","dc3rr"],
+          ["afyp","dc3ll"],
+          {"beamDeform":10000,"beamStrength":20000}
+          {"beamSpring":200800,"beamDamp":400},
+          {"breakGroup":"engine_intake"},
+          //air filter piping break
+          ["afyp","en4l"],
+          ["afyp","en4r"],
+          ["afyp","en3l"],
+          ["afyp","en3r"],
+          //duplicates to help mesh break
+          ["afyp","dc1rr"],
+          ["afyp","dc1ll"],
+          ["afyp","dc3rr"],
+          ["afyp","dc3ll"],
+          {"breakGroup":""},
+          {"optional":false},
+          //rad pipe node
+          {"beamSpring":3200800,"beamDamp":160},
+          {"beamDeform":35000,"beamStrength":45000}
+          //right
+          ["en3r","en5r"],
+          ["en4r","en5r"],
+          ["en1r","en5r"],
+          ["en2r","en5r"],
+          //left
+          ["en3l","en5l"],
+          ["en4l","en5l"],
+          ["en1l","en5l"],
+          ["en2l","en5l"],
+          {"breakGroup":""},
+          {"beamSpring":240800,"beamDamp":800},
+          {"beamDeform":10000,"beamStrength":30000},
+          //rad pipe to engine break
+          {"optional":true},
+          {"breakGroup":"radtube_R"},
+          ["rdt1r","en5r"],
+          ["rdt1r","en3r"],
+          ["rdt1r","en4r"],
+          {"breakGroup":"radtube_L"},
+          ["rdt1l","en5l"],
+          ["rdt1l","en3l"],
+          ["rdt1l","en4l"],
+          ["rad2l","en5l"],
+          {"breakGroup":""},
+          {"beamSpring":1000800,"beamDamp":1600},
+          {"beamDeform":100000,"beamStrength":295000},
+          //engine mounts
+          ["en1r","f2r"],
+          ["en1l","f2l"],
+          ["en1r","f12r"],
+          ["en1l","f12l"],
+          ["en1r","f3r"],
+          ["en1l","f3l"],
+          ["en1r","f13r"],
+          ["en1l","f13l"],
+          ["en2r","f3r"],
+          ["en2l","f3l"],
+          ["en2r","f13r"],
+          ["en2l","f13l"],
+
+          {"beamSpring":4000800,"beamDamp":1600},
+          ["en2r","f4r"],
+          ["en2l","f4l"],
+          ["en2r","f14r",{"name":"engine","beamStrength":231000,"disableMeshBreaking":true,"disableTriangleBreaking":true}],
+          ["en2l","f14l",{"name":"engine","beamStrength":231000,"disableMeshBreaking":true,"disableTriangleBreaking":true}],
+          //support beams for anti clipping
+          {"beamType":"|SUPPORT", "beamLongBound":5},
+          {"beamSpring":8000800,"beamDamp":800},
+          {"beamDeform":250000,"beamStrength":850000},
+          {"beamPrecompression":0.8},
+          ["en1r","f12r"],
+          ["en1l","f12l"],
+          ["en1r","f2r"],
+          ["en1l","f2l"],
+          {"beamSpring":1600800,"beamDamp":160},
+          ["en1r","dc5rr"],
+          ["en1l","dc5ll"],
+          ["en2r","dc10rr"],
+          ["en2l","dc10ll"],
+          {"optional":false},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1, "beamShortBound":1},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            {"dragCoef":3},
+            {"groundModel":"metal"},
+            {"group":"semi_engine"},
+            ["en4r","en2r","en1r"],
+            ["en4r","en1r","en3r"],
+            ["en4l","en1l","en2l"],
+            ["en4l","en3l","en1l"],
+            ["en4r","en3r","en3l"],
+            ["en4r","en3l","en4l"],
+            ["en3r","en1r","en1l"],
+            ["en3r","en1l","en3l"],
+            ["en4r","en2l","en2r"],
+            ["en4r","en4l","en2l"],
+            ["en1l", "en2r", "en2l"],
+            ["en1l", "en1r", "en2r"],
+            {"group":""},
+    ],
+},
+}
