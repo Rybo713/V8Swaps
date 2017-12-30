@@ -12,23 +12,29 @@ Max RPM: 12000
 Custom Linear Torque Curve
 Twin Turbos from Gavril D-Series
 
+**Description of Semi:**
+A custom Gavril TCX Engine by AdamB
+Max RPM: 12000
+Custom Linear Torqu Curve
+Custom turbos from ETK I-Series
+
 # What Works?
 - Ibishu Covet
-- ETK I Series
+- ETK I-Series
 - '91 Ibishu Pessima
 - ETK800 Series
 - 200BX
+- (etkc) ETK K-Series
 
 # What's in Progress?
 - Supra Sounds (2JZ)
-- V8 Pigeon
+- V8 Sunburst
 
 # What Still Needs Work?
-- ETK I Series Semi Engine: Engine flies out when locked up while high rpm usage (not planning to fix due to fun factor)
-- (etkc) ETK K Series: Not working
+- ETK I-Series Semi Engine: Engine flies out when locked up while high rpm usage (not planning to fix due to fun factor)
+- V8 Pigeon: Engine is disabled and position of engine is very off
 
 # Planned: 
-- V8 Sunburst
 - V8 Legran
 - V8 Hopper
 - V8 '99 Ibishu Pessima
