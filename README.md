@@ -1,39 +1,37 @@
 # BETA - SkidMarks-BeamNGMods 
 
-Works on V 0.6 and later
+Works on v0.6 and later
 
 Insane Engine Swaps for BeamNG Drive stock cars.
 Maybe some engine sounds if you're lucky :)
 
 **Description of V8:**
 
-3.9L Race V8 Engine
-
+3.9L Race V8 Engine from Civetta Bolide
 Max RPM: 12000
-
-Twin Turbos 
+Custom Linear Torque Curve
+Twin Turbos from Gavril D-Series
 
 # What Works?
+- Ibishu Covet
 - ETK I Series
 - '91 Ibishu Pessima
 - ETK800 Series
 - 200BX
 
+# What's in Progress?
+- Supra Sounds (2JZ)
+- V8 Pigeon
 
 # What Still Needs Work?
 - ETK I Series Semi Engine: Engine flies out when locked up while high rpm usage (not planning to fix due to fun factor)
-- Ibishu Covet: Catches on fire
 - (etkc) ETK K Series: Not working
 
-
 # Planned: 
-- Supra sound mods
 - V8 Sunburst
 - V8 Legran
 - V8 Hopper
 - V8 '99 Ibishu Pessima
-- V8 Pigeon
-
 
 # How to Install Mods?
 1) Download the .jbeam file. 
@@ -67,8 +65,9 @@ Twin Turbos
 5) Enjoy!
 
 # Credits
-By: Ryan Wong and Greg Ocol and Adam B (Gavrii TCX Engine Swap)
+By: Ryan Wong and Gregory Ocol and Adam B (Gavrii TCX Engine)
 
 Follow me on Twitter @RyanW713 for updates!
 
-Please don't rip off any code. If you do, please credit @RyanW713 and Greg Ocol and Adam B
+Everythig is open source. Credit @RyanW713 and @CanadianGreg and Adam B if code is copied
+No re-uploads.
