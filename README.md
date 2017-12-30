@@ -1,8 +1,9 @@
 # BETA - SkidMarks-BeamNGMods 
 
-Works on V 0.11.0.2 and later
+Works on V 0.6 and later
 
-Insane Engine Swaps for BeamNG Drive stock cars. 
+Insane Engine Swaps for BeamNG Drive stock cars.
+Maybe some engine sounds if you're lucky :)
 
 **Description of V8:**
 
@@ -20,7 +21,7 @@ Twin Turbos
 
 
 # What Still Needs Work?
-- ETK I Series Semi Engine: Drivetrain is broken and breaks the other ETK I Series configurations
+- ETK I Series Semi Engine: Engine flies out when locked up while high rpm usage (not planning to fix due to fun factor)
 - Ibishu Covet: Catches on fire
 - (etkc) ETK K Series: Not working
 
@@ -66,8 +67,8 @@ Twin Turbos
 5) Enjoy!
 
 # Credits
-By: Ryan Wong and Greg Ocol
+By: Ryan Wong and Greg Ocol and Adam B (Gavrii TCX Engine Swap)
 
 Follow me on Twitter @RyanW713 for updates!
 
-Please don't rip off any code. If you do, please credit @RyanW713 and Greg Ocol
+Please don't rip off any code. If you do, please credit @RyanW713 and Greg Ocol and Adam B
