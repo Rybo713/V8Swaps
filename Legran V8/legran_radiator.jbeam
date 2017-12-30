@@ -1,0 +1,114 @@
+{
+"legran_radiator": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Radiator",
+        "value":80,
+    }
+    "slotType" : "legran_radiator",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         //["legran_radtube", ["legran_engine","legran_radiator"]],
+         ["legran_radiator", ["legran_radiator"]],
+    ],
+    "mainEngine":{
+        "radiatorArea":0.33,
+        "radiatorEffectiveness":9000,
+        "coolantVolume":7.5,
+        "radiatorFanType":"electric",
+        "radiatorFanTemperature":100,
+        "radiatorFanMaxAirSpeed":2,
+        "thermostatTemperature":90
+        },
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+}
+"legran_radiator_v6": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"V6 Radiator",
+        "value":110,
+    }
+    "slotType" : "legran_radiator",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         //["legran_radtube", ["legran_engine","legran_radiator"]],
+         ["legran_radiator", ["legran_radiator"]],
+    ],
+    "mainEngine":{
+        "radiatorArea":0.36,
+        "radiatorEffectiveness":11000,
+        "coolantVolume":8.0,
+        "radiatorFanType":"electric",
+        "radiatorFanTemperature":100,
+        "radiatorFanMaxAirSpeed":2,
+        "thermostatTemperature":90
+        },
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+}
+"legran_radiator_race": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"High Performance Radiator",
+        "value":220,
+    }
+    "slotType" : "legran_radiator",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         //["legran_radtube", ["legran_engine","legran_radiator"]],
+         ["legran_radiator", ["legran_radiator"]],
+    ],
+    "mainEngine":{
+        "radiatorArea":0.37,
+        "radiatorEffectiveness":16000,
+        "coolantVolume":8.5,
+        "radiatorFanType":"electric",
+        "radiatorFanTemperature":100,
+        "radiatorFanMaxAirSpeed":3,
+        "thermostatTemperature":90
+        },
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+}
+"legran_radiator_v8": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"V8 Radiator",
+        "value":220,
+    }
+    "slotType" : "legran_radiator",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         //["legran_radtube", ["legran_engine","legran_radiator"]],
+         ["legran_radiator", ["legran_radiator"]],
+    ],
+    "mainEngine":{
+        "radiatorArea":0.37,
+        "radiatorEffectiveness":32000,
+        "coolantVolume":10,
+        "radiatorFanType":"electric",
+        "radiatorFanTemperature":100,
+        "radiatorFanMaxAirSpeed":7,
+        "thermostatTemperature":90
+        },
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+}
+}
