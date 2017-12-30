@@ -1,0 +1,67 @@
+{
+"etki_differential_R_tcx": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"TCX Open Rear Differential",
+        "value":250,
+    }
+    "slotType" : "etki_differential_R",
+    "slots": [
+        ["type", "default", "description"]
+        ["etki_driveshaft_R","etki_driveshaft_R", "Rear Driveshaft"],
+    ],
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"]
+        ["differential", "differential_R", "driveshaft_R", 1, {"diffType":"open", "gearRatio": 2.0, "friction":15}]
+        ["shaft", "wheelaxleRL", "differential_R", 1, {"connectedWheel":"RL", "breakTriggerBeam":"axle_RL", "friction":2}]
+        ["shaft", "wheelaxleRR", "differential_R", 2, {"connectedWheel":"RR", "breakTriggerBeam":"axle_RR", "friction":2}]
+    ],
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["etki_diff", ["etki_body","etki_subframe_R","etki_shocktop_R"]],
+        ["etki_halfshaft_R", ["etki_hub_R","etki_subframe_R"]],
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //--diff weight--
+         {"selfCollision":false},
+         {"collision":false}
+         {"nodeMaterial":"|NM_METAL"},
+         {"frictionCoef":0.5},
+         {"group":""},
+         {"nodeWeight":31},
+         ["rdiff", 0, 1.355, 0.26],
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //differential node
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":4800600,"beamDamp":150},
+          {"beamDeform":27000,"beamStrength":"FLT_MAX"},
+          ["rdiff","rx1r"],
+          ["rdiff","rx1l"],
+          ["rdiff","r5"],
+          ["rdiff","r1rr"],
+          ["rdiff","r1ll"],
+          ["rdiff","r1"],
+          ["rdiff","r2"],
+          ["rdiff","f4r"],
+          ["rdiff","f4l"],
+          //halfshafts
+          {"beamPrecompression":1, "beamType":"|BOUNDED", "beamLongBound":0.02, "beamShortBound":0.02},
+          {"beamSpring":0,"beamDamp":0,"beamDeform":3600,"beamStrength":9500},
+          {"beamLimitSpring":7501000,"beamLimitDamp":250},
+          {"breakGroupType":1},
+          {"optional":true},
+          {"breakGroup":"wheel_RR"},
+          ["rw1r","rdiff", {"name":"axle_RR"}],
+          {"breakGroup":"wheel_RL"},
+          ["rw1l","rdiff", {"name":"axle_RL"}],
+          {"breakGroup":""},
+          {"optional":false},
+          {"breakGroupType":0},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+}
+}
