@@ -32,7 +32,7 @@
             [9000, 438],
             [10000, 458],
             [11000, 478],
-			[12000, 498],
+	    [12000, 498],
         ],
 
         "idleRPM":1200,
@@ -42,7 +42,6 @@
         "hasRevLimiter":false,
         "redlineTorqueDropOffRange":1000
         "dynamicFriction":0.055
-        //"burnEfficiency":0.25
         "burnEfficiency":[
             [0, 0.08],
             [0.05, 0.18],
@@ -66,13 +65,13 @@
         "oilVolume":7
 
         //engine durability
-        "cylinderWallTemperatureDamageThreshold":1600000000
-        "headGasketDamageThreshold":1500000000000
-        "pistonRingDamageThreshold":15000000000
-        "connectingRodDamageThreshold":200000000000
+        "cylinderWallTemperatureDamageThreshold":160
+        "headGasketDamageThreshold":1500000
+        "pistonRingDamageThreshold":1500000
+        "connectingRodDamageThreshold":2000000
         
-        "maxTorqueRating": 4400000000000,
-        "maxOverTorqueDamage": 5000000000000,
+        "maxTorqueRating": 440,
+        "maxOverTorqueDamage": 500,
 
         //node beam interface
         "waterDamage": {"[engineGroup]:":["engine_intake"]},
@@ -80,7 +79,7 @@
         "engineBlock": {"[engineGroup]:":["engine_block"]},
         "breakTriggerBeam":"engine",
 		
-		"soundConfig": "soundConfig",
+	"soundConfig": "soundConfig",
     },
     "soundConfig": {
         "sampleName": "V8_2",
@@ -91,12 +90,9 @@
         "offLoadGain":0.65,
         "eqLowGain": -5,
         "eqLowFreq": 150,
-        //"eqLowWidth": 0,
         "eqHighGain": -5,
         "eqHighFreq": 6000,
-        //"eqHighWidth": 0,
         "lowCutFreq":90,
-        //"eqFundamentalGain": -15,
     },	
     "vehicleController": {
         "clutchLaunchStartRPM":2400,
@@ -107,7 +103,7 @@
     },
     "flexbodies": [
         ["mesh", "[group]:", "nonFlexMaterials"],
-        ["gavril_v8_fullsize", ["etki_engine"],[]{"pos":{"x":0,"y":0.2,"z":-0.1}}],
+        ["gavril_v8_fullsize", ["hatch_engine"],[]{"pos":{"x":0.0,"y":0.0,"z":-0.075}}],
     ],
     "nodes": [
          ["id", "posX", "posY", "posZ"],
@@ -115,7 +111,7 @@
          {"nodeMaterial":"|NM_METAL"},
          {"selfCollision":false},
          {"collision":true}
-         {"group":"etki_engine"},
+         {"group":"hatch_engine"},
          {"nodeWeight":22},
          {"engineGroup":"engine_block"}
          {"chemEnergy":2000,"burnRate":0.39,"flashPoint":800,"specHeat": 0.2,"selfIgnitionCoef":false,"smokePoint":600,"baseTemp":500,"conductionRadius":0.15},
@@ -207,54 +203,9 @@
             {"triangleType":"NORMALTYPE"},
     ],
 }
-"etki_transfer_case_4WD": {
-    "information":{
-        "authors":"BeamNG",
-        "name":"4WD Hi/Lo Transfer Case",
-        "value":400,
-    },
-    "slotType" : "etki_transfer_case",
-    "controller": [
-        ["fileName"],
-        ["4wd", {"shaftName":"transfercase_F", "rangeBoxName":"rangebox"}],
-    ],
-    "powertrain" : [
-        ["type", "name", "inputName", "inputIndex"]
-        ["rangeBox", "rangebox", "gearbox", 1, {"gearRatios":[1,2.2]}]
-        //locked center diff
-        ["differential", "transfercase", "rangebox", 1, {"diffType":"locked", "lockTorque":8000, "friction":5}]
-        //disconnecting front shaft
-        ["shaft", "transfercase_F", "transfercase", 2, {"canDisconnect":true}],
-    ],
-    "nodes": [
-         ["id", "posX", "posY", "posZ"],
-         //--tcase weight--
-         {"selfCollision":false},
-         {"collision":false},
-         {"nodeMaterial":"|NM_METAL"},
-         {"frictionCoef":0.5},
-         {"group":"etki_transmission"},
-         {"nodeWeight":23.75},
-         ["tcase", 0.13, -0.27, 0.22],
-         {"group":""},
-    ],
-    "beams": [
-          ["id1:", "id2:"],
-          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-          {"beamSpring":5001000,"beamDamp":50},
-          {"beamDeform":50000,"beamStrength":"FLT_MAX"},
-          ["tcase","e1r"],
-          ["tcase","e3r"],
-          ["tcase","e1l"],
-          ["tcase","e3l"],
-          ["tcase","tra1"],
-          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-    ],
-}
-
 "fullsize_twinturbo": {
     "information":{
-        "authors":"BeamNG",
+        "authors":"BeamNG, Ryan W, Greg O",
         "name":"Twin Turbochargers",
         "value":10000,
     }
@@ -331,9 +282,9 @@
     
     "flexbodies": [
         ["mesh", "[group]:", "nonFlexMaterials"],
-        ["fullsize_intake_TT", ["fullsize_engine","fullsize_body","fullsize_shocktop_F"]],
-        ["fullsize_intercooler_TT", ["fullsize_engine","fullsize_body","fullsize_shocktop_F"]],
-        ["fullsize_TT", ["fullsize_engine","fullsize_body","fullsize_shocktop_F"]],
+        ["fullsize_intake_TT", ["hatch_engine","hatch_intercooler","hatch_rad"]],
+        ["fullsize_intercooler_TT", ["hatch_intercooler","hatch_rad"]],
+        ["fullsize_TT", ["hatch_engine"]],
     ],
 }
 }
