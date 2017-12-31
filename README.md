@@ -12,6 +12,20 @@ Maybe some engine sounds if you're lucky :)
 - Custom Linear Torque Curve
 - Twin Turbos from Gavril D-Series @ 9.8 PSI
 
+<h3>Insane Stats of V8 (Not made up!):</h3>
+
+**Naturally Aspirated:**
+- 683 bhp
+- 303 lb/ft
+
+**Twin Turbos @ 9.8 PSI:**
+- 1453 bhp
+- 645 lb/ft
+
+**Twin Turbos @ 48 PSI:**
+- 5108 bhp
+- 2267 lb/ft
+
 
 <h3>Description of Semi:</h3>
 
