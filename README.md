@@ -36,11 +36,12 @@ Custom turbos from ETK I-Series
 - V8 (etkc) ETK K-Series
 - V8 Sunburst
 - V8 Legran
+- V8 Hopper
+- V8 Miramar
 
 # What's in Progress?
 - Supra Sounds (2JZ)
-- V8 Miramar
-- V8 Hopper
+_ V8 Gavril H-Series
 
 # What Still Needs Work?
 - ETK I-Series Semi Engine: Engine flies out when locked up while high rpm usage (not planning to fix due to fun factor)
@@ -49,7 +50,6 @@ Custom turbos from ETK I-Series
 # Planned: 
 - V8 '99 Ibishu Pessima
 - V8 SBR4
-- V8 Gavril H-Series
 
 # How to Install Mods?
 1) Download the .jbeam file. 
