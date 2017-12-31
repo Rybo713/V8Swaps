@@ -10,7 +10,7 @@ Maybe some engine sounds if you're lucky :)
 - 3.9L Race V8 Engine from Civetta Bolide
 - Max RPM: 12000
 - Custom Linear Torque Curve
-- Twin Turbos from Gavril D-Series
+- Twin Turbos from Gavril D-Series @ 9.8 PSI
 
 
 <h3>Description of Semi:</h3>
@@ -36,6 +36,7 @@ Maybe some engine sounds if you're lucky :)
 
 # What's in Progress?
 - Supra Sounds (2JZ)
+- Uping the boost on the Twin Turbos 
 
 # What Still Needs Work?
 - ETK I-Series Semi Engine: Engine flies out when locked up while high rpm usage (not planning to fix due to fun factor)
@@ -44,6 +45,7 @@ Maybe some engine sounds if you're lucky :)
 # Planned: 
 - V8 '99 Ibishu Pessima
 - V8 SBR4
+- AWD and RWD conversion on Covet
 
 # How to Install Mods?
 1) Download the .jbeam file. 
