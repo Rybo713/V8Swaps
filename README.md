@@ -39,6 +39,7 @@ Custom turbos from ETK I-Series
 
 # What's in Progress?
 - Supra Sounds (2JZ)
+- V8 Miramar
 - V8 Hopper
 
 # What Still Needs Work?
@@ -47,7 +48,6 @@ Custom turbos from ETK I-Series
 
 # Planned: 
 - V8 '99 Ibishu Pessima
-- V8 Miramir
 - V8 SBR4
 - V8 Gavril H-Series
 
