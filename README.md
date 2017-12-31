@@ -41,7 +41,7 @@ Custom turbos from ETK I-Series
 
 # What's in Progress?
 - Supra Sounds (2JZ)
-_ V8 Gavril H-Series
+- V8 Gavril H-Series
 
 # What Still Needs Work?
 - ETK I-Series Semi Engine: Engine flies out when locked up while high rpm usage (not planning to fix due to fun factor)
