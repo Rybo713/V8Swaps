@@ -35,8 +35,7 @@ Maybe some engine sounds if you're lucky :)
 - V8 Gavril H-Series
 
 # What's in Progress?
-- Supra Sounds (2JZ)
-- Uping the boost on the Twin Turbos 
+- Supra Sounds (2JZ) 
 
 # What Still Needs Work?
 - ETK I-Series Semi Engine: Engine flies out when locked up while high rpm usage (not planning to fix due to fun factor)
