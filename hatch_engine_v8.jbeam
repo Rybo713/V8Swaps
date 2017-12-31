@@ -11,6 +11,7 @@
         ["hatch_transmission","hatch_transmission_5M", "Transmission"],
         ["fullsize_intake_tt","hatch_intake_2.4", "Intake", "fullsize_intake_tt", {"coreSlot":true}],
         ["hatch_exhaust","hatch_exhaust", "Exhaust"],
+	["n2o_system","", "Nitrous Oxide System"],
     ],
     "powertrain": [
         ["type", "name", "inputName", "inputIndex"],
