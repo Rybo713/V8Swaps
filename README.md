@@ -10,7 +10,7 @@ Maybe some engine sounds if you're lucky :)
 - 3.9L Race V8 Engine from Civetta Bolide
 - Max RPM: 12000
 - Custom Linear Torque Curve
-- Twin Turbos from Gavril D-Series @ 9.8 PSI
+- Twin Turbos from Gavril D-Series @ 9.8 PSI (Configurable up to 48 PSI
 
 <h3>Insane Stats of V8 (Not made up!):</h3>
 
