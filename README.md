@@ -7,24 +7,18 @@ Maybe some engine sounds if you're lucky :)
 
 <h3>Description of V8:</h3>
 
-3.9L Race V8 Engine from Civetta Bolide
-
-Max RPM: 12000
-
-Custom Linear Torque Curve
-
-Twin Turbos from Gavril D-Series
+- 3.9L Race V8 Engine from Civetta Bolide
+- Max RPM: 12000
+- Custom Linear Torque Curve
+- Twin Turbos from Gavril D-Series
 
 
 <h3>Description of Semi:</h3>
 
-A custom Gavril TCX Engine by AdamB
-
-Max RPM: 12000
-
-Custom Linear Torque Curve
-
-Custom turbos from ETK I-Series
+- A custom Gavril TCX Engine by AdamB
+- Max RPM: 12000
+- Custom Linear Torque Curve
+- Custom turbos from ETK I-Series
 
 
 # What Works?
@@ -38,14 +32,14 @@ Custom turbos from ETK I-Series
 - V8 Legran
 - V8 Hopper
 - V8 Miramar
+- V8 Gavril H-Series
 
 # What's in Progress?
 - Supra Sounds (2JZ)
-- V8 Gavril H-Series
 
 # What Still Needs Work?
 - ETK I-Series Semi Engine: Engine flies out when locked up while high rpm usage (not planning to fix due to fun factor)
-- V8 Pigeon: Engine is disabled and position of engine is very off
+- V8 Pigeon: Engine is disabled and position of the engine is quite off
 
 # Planned: 
 - V8 '99 Ibishu Pessima
@@ -88,4 +82,5 @@ By: Ryan Wong and Gregory Ocol and Adam B (Gavrii TCX Engine)
 Follow me on Twitter @RyanW713 for updates!
 
 Everything is open source. Credit @RyanW713 and @CanadianGreg and Adam B if code is copied
+
 No re-uploads.
