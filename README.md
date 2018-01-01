@@ -47,15 +47,15 @@ Maybe some engine sounds if you're lucky :)
 - V8 Hopper
 - V8 Miramar
 - V8 Gavril H-Series
+- V8 Pigeon
 
 # What's in Progress?
 - Supra Sounds (2JZ) 
-- V8 Pigeon (Revision)
 - Gavril T-Series Diesel Swap (Revision)
 
 # What Still Needs Work?
 - ETK I-Series Semi Engine: Engine flies out when locked up while high rpm usage (not planning to fix due to fun factor)
-- V8 Pigeon: Engine is disabled and position of the engine is quite off
+- V8 Pigeon: Position is in the trunk, engine vibrates too much
 
 # Planned: 
 - V8 '99 Ibishu Pessima
