@@ -1,0 +1,29 @@
+{
+"hatch_radiator_v8": {
+    "information":{
+        "authors":"BeamNG, Greg O, Ryan W",
+        "name":"High Performance V8 Radiator",
+        "value":100,
+    }
+    "slotType" : "hatch_radiator",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["hatch_radiator", ["hatch_radsupport"]],
+    ],
+    "mainEngine":{
+        "radiatorArea":0.37,
+        "radiatorEffectiveness":15000,
+        "coolantVolume":13.5,
+        "radiatorFanType":"electric",
+        "radiatorFanTemperature":100,
+        "radiatorFanMaxAirSpeed":3,
+        "thermostatTemperature":90
+        },
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+}
+}

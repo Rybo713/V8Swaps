@@ -1,22 +1,22 @@
-}
+{
 "etkc_radiator_v8": {
     "information":{
-        "authors":"BeamNG, Ryan W",
-        "name":"V8 High Performance Radiator",
-        "value":280,
+        "authors":"BeamNG, Greg O, Ryan W",
+        "name":"High Performance V8 Radiator",
+        "value":100,
     }
     "slotType" : "etkc_radiator",
     "flexbodies": [
          ["mesh", "[group]:", "nonFlexMaterials"],
-         ["etkc_radiator", ["etk_radiator"]],
+         ["etkc_radiator", ["etkc_radsupport"]],
     ],
     "mainEngine":{
-        "radiatorArea":0.4,
-        "radiatorEffectiveness":64000,
-        "coolantVolume":12,
+        "radiatorArea":0.37,
+        "radiatorEffectiveness":15000,
+        "coolantVolume":13.5,
         "radiatorFanType":"electric",
         "radiatorFanTemperature":100,
-        "radiatorFanMaxAirSpeed":7,
+        "radiatorFanMaxAirSpeed":3,
         "thermostatTemperature":90
         },
     "beams": [

@@ -1,17 +1,16 @@
 {
 "sunburst_engine_v8": {
     "information":{
-        "authors":"BeamNG, Ryan W, Greg O",
+        "authors":"BeamNG, Greg O, Ryan W",
         "name":"3.9L Race V8 Engine",
         "value":44000,
     }
     "slotType" : "sunburst_engine",
     "slots": [
         ["type", "default", "description"]
-        ["sunburst_transmission","sunburst_transmission_5M", "Transmission"],
-        ["fullsize_intake_tt","sunburst_intake_2.4", "Intake", "fullsize_intake_tt", {"coreSlot":true}],
-        ["sunburst_exhaust_I4","etk_exhaust_I4", "Exhaust"],
-		["sunburst_radiator","sunburst_radiator", "Radiator"],
+//      ["sunburst_exhaust","sunburst_exhaust", "Exhaust"],
+        ["sunburst_transmission","sunburst_transmission_4M", "Transmission"],
+        ["n2o_system","", "Nitrous Oxide System"],
     ],
     "powertrain": [
         ["type", "name", "inputName", "inputIndex"],
@@ -33,7 +32,7 @@
             [9000, 438],
             [10000, 458],
             [11000, 478],
-			[12000, 498],
+			[12000, 498],		
         ],
 
         "idleRPM":1200,
@@ -67,19 +66,20 @@
         "oilVolume":7
 
         //engine durability
-        "cylinderWallTemperatureDamageThreshold":1600000000
-        "headGasketDamageThreshold":1500000000000
-        "pistonRingDamageThreshold":15000000000
-        "connectingRodDamageThreshold":200000000000
+        "cylinderWallTemperatureDamageThreshold":160
+        "headGasketDamageThreshold":1500000
+        "pistonRingDamageThreshold":1500000
+        "connectingRodDamageThreshold":2000000
         
-        "maxTorqueRating": 4400000000000,
-        "maxOverTorqueDamage": 5000000000000,
+        "maxTorqueRating": 440,
+        "maxOverTorqueDamage": 500,
 
         //node beam interface
         "waterDamage": {"[engineGroup]:":["engine_intake"]},
         "radiator": {"[engineGroup]:":["radiator"]},
         "engineBlock": {"[engineGroup]:":["engine_block"]},
         "breakTriggerBeam":"engine",
+        "uiName":"Engine",
 		
 		"soundConfig": "soundConfig",
     },
@@ -108,37 +108,40 @@
     },
     "flexbodies": [
         ["mesh", "[group]:", "nonFlexMaterials"],
-        ["gavril_v8_fullsize", ["etki_engine"],[]{"pos":{"x":0,"y":0.2,"z":-0.1}}],
+        ["super_engine", ["sunburst_engine"],[]{"pos":{"x":0,"y":-2.1,"z":0.1}}],
+		["super_header", ["sunburst_engine"]]
     ],
     "nodes": [
          ["id", "posX", "posY", "posZ"],
+         //1.6L I4 Engine
          {"frictionCoef":0.5},
          {"nodeMaterial":"|NM_METAL"},
          {"selfCollision":false},
-         {"collision":true}
-         {"group":"etki_engine"},
-         {"nodeWeight":22},
+         {"collision":true},
+         {"group":"sunburst_engine"},
+         {"nodeWeight":16},
          {"engineGroup":"engine_block"}
-         {"chemEnergy":2000,"burnRate":0.39,"flashPoint":800,"specHeat": 0.2,"selfIgnitionCoef":false,"smokePoint":600,"baseTemp":500,"conductionRadius":0.15},
-         ["e1r", -0.11, -1.0, 0.22],
-         ["e1l", 0.11, -1.0, 0.22],
-         ["e2r", -0.11, -1.59, 0.22],
-         ["e2l", 0.11, -1.59, 0.22],
+         ["e1r", -0.17, -0.9, 0.29],
+         ["e1l", 0.17, -0.9, 0.29,{"chemEnergy":2000,"burnRate":0.39,"flashPoint":800,"specHeat": 0.1,"selfIgnitionCoef":false,"smokePoint":650,"baseTemp":"thermals","conductionRadius":0.13}],
+         ["e2r", -0.17, -1.63, 0.38],
+         ["e2l", 0.17, -1.63, 0.38,{"chemEnergy":2000,"burnRate":0.39,"flashPoint":800,"specHeat": 0.1,"selfIgnitionCoef":false,"smokePoint":650,"baseTemp":"thermals","conductionRadius":0.13}],
          {"engineGroup":["engine_block","engine_intake"]}
-         ["e3r", -0.24, -1.0, 0.69],
-         ["e3l", 0.05, -1.0, 0.75],
-         ["e4r", -0.24, -1.59, 0.69{"isExhaust":true}],
-         ["e4l", 0.05, -1.59, 0.75],
-         {"chemEnergy":false,"burnRate":false,"flashPoint":false, "specHeat": false,"selfIgnitionCoef":false,"smokePoint":false,"baseTemp":false,"conductionRadius":false},
+         {"nodeWeight":10},
+         ["e3r", -0.13, -0.93, 0.88],
+         ["e3l", 0.13, -0.93, 0.88,{"chemEnergy":2000,"burnRate":0.39,"flashPoint":800,"specHeat": 0.1,"selfIgnitionCoef":false,"smokePoint":650,"baseTemp":"thermals","conductionRadius":0.13}],
+         ["e4r", -0.13, -1.58, 0.88],
+         ["e4l", 0.13, -1.58, 0.88,{"isExhaust":"mainEngine","chemEnergy":2000,"burnRate":0.39,"flashPoint":800,"specHeat": 0.1,"selfIgnitionCoef":false,"smokePoint":650,"baseTemp":"thermals","conductionRadius":0.13}],
+         {"nodeWeight":3},
+         ["e5l", 0.29, -1.08, 0.92,{"chemEnergy":2000,"burnRate":0.39,"flashPoint":800,"specHeat": 0.5,"selfIgnitionCoef":false,"smokePoint":650,"baseTemp":"thermals","conductionRadius":0.13}],
+         ["e6l", 0.37, -1.48, 0.90,{"chemEnergy":2000,"burnRate":0.39,"flashPoint":800,"specHeat": 0.5,"selfIgnitionCoef":false,"smokePoint":650,"baseTemp":"thermals","conductionRadius":0.13}],
          {"engineGroup":""}
          {"group":""},
     ],
     "beams": [
           ["id1:", "id2:"],
           {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-
-          {"beamSpring":8400600,"beamDamp":150},
-          {"beamDeform":540000,"beamStrength":"FLT_MAX"},
+          {"beamSpring":15001000,"beamDamp":400},
+          {"beamDeform":175000,"beamStrength":"FLT_MAX"},
           //engine
           ["e1r","e1l"],
           ["e2r","e2l"],
@@ -160,8 +163,8 @@
           ["e2r","e3l"],
           ["e2l","e3r"],
 
-          ["e1r","e4r"{"isExhaust":true}],
-          ["e1l","e4l"],
+          ["e1r","e4r"],
+          ["e1l","e4l"{"isExhaust":"mainEngine"}],
           ["e1r","e4l"],
           ["e1l","e4r"],
 
@@ -170,15 +173,23 @@
           ["e3r","e4l"],
           ["e3l","e4r"],
 
-          {"beamSpring":60600,"beamDamp":50},
-          {"beamDeform":1000,"beamStrength":2000},
-          //rad tube beams
-          {"breakGroup":"radtube"},
-          ["e3r","f15l"],
-          ["e3r","f15"],
-          ["e3r","f15l"],
-          ["e3r","f15"],
-          {"breakGroup":""},
+          ["e1r","e3l"],
+          ["e1l","e3r"],
+          ["e2r","e4l"],
+          ["e2l","e4r"],
+          {"beamSpring":1840460,"beamDamp":145},
+          //air filter
+          {"beamDeform":8580,"beamStrength":"FLT_MAX"},
+          ["e4l", "e6l"],
+          ["e3l", "e5l"],
+          ["e6l", "e5l"],
+          ["e6l", "e2l"],
+          ["e5l", "e1l"],
+
+          ["e6l", "e3l"],
+          ["e5l", "e4l"],
+          ["e6l", "e1l"],
+          ["e2l", "e5l"],
           {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
     ],
     "triangles": [
@@ -207,53 +218,8 @@
             ["e1r", "e1l", "e2l"],
             {"triangleType":"NORMALTYPE"},
     ],
-}
-"etki_transfer_case_4WD": {
-    "information":{
-        "authors":"BeamNG",
-        "name":"4WD Hi/Lo Transfer Case",
-        "value":400,
-    },
-    "slotType" : "etki_transfer_case",
-    "controller": [
-        ["fileName"],
-        ["4wd", {"shaftName":"transfercase_F", "rangeBoxName":"rangebox"}],
-    ],
-    "powertrain" : [
-        ["type", "name", "inputName", "inputIndex"]
-        ["rangeBox", "rangebox", "gearbox", 1, {"gearRatios":[1,2.2]}]
-        //locked center diff
-        ["differential", "transfercase", "rangebox", 1, {"diffType":"locked", "lockTorque":8000, "friction":5}]
-        //disconnecting front shaft
-        ["shaft", "transfercase_F", "transfercase", 2, {"canDisconnect":true}],
-    ],
-    "nodes": [
-         ["id", "posX", "posY", "posZ"],
-         //--tcase weight--
-         {"selfCollision":false},
-         {"collision":false},
-         {"nodeMaterial":"|NM_METAL"},
-         {"frictionCoef":0.5},
-         {"group":"etki_transmission"},
-         {"nodeWeight":23.75},
-         ["tcase", 0.13, -0.27, 0.22],
-         {"group":""},
-    ],
-    "beams": [
-          ["id1:", "id2:"],
-          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-          {"beamSpring":5001000,"beamDamp":50},
-          {"beamDeform":50000,"beamStrength":"FLT_MAX"},
-          ["tcase","e1r"],
-          ["tcase","e3r"],
-          ["tcase","e1l"],
-          ["tcase","e3l"],
-          ["tcase","tra1"],
-          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
-    ],
-}
-
-"fullsize_twinturbo_neidjel": {
+},
+"fullsize_twinturbo": {
     "information":{
         "authors":"BeamNG",
         "name":"Twin Turbochargers",

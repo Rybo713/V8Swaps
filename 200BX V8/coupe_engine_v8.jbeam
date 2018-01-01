@@ -1,0 +1,222 @@
+{
+"coupe_engine_v8": {
+    "information":{
+        "authors":"BeamNG, Greg O, Ryan W",
+        "name":"3.9L Race V8 Engine",
+        "value":44000,
+    }
+    "slotType" : "coupe_engine",
+    "slots": [
+        ["type", "default", "description"]
+//      ["coupe_exhaust","coupe_exhaust", "Exhaust"],
+        ["coupe_transmission","coupe_transmission_4M", "Transmission"],
+        ["n2o_system","", "Nitrous Oxide System"],
+    ],
+    "powertrain": [
+        ["type", "name", "inputName", "inputIndex"],
+        ["combustionEngine", "mainEngine", "dummy", 0],
+    ],
+    "mainEngine": {
+        "torque":[
+            ["rpm", "torque"]
+            [0, 0],
+            [500, 136],
+            [1000, 195],
+            [2000, 240],
+            [3000, 270],
+            [4000, 300],
+            [5000, 334],
+            [6000, 380],
+            [7000, 409],
+            [8000, 418],
+            [9000, 438],
+            [10000, 458],
+            [11000, 478],
+			[12000, 498],		
+        ],
+
+        "idleRPM":1200,
+        "maxRPM":12000,
+        "inertia":0.15,
+        "friction":18
+        "hasRevLimiter":false,
+        "redlineTorqueDropOffRange":1000
+        "dynamicFriction":0.055
+        //"burnEfficiency":0.25
+        "burnEfficiency":[
+            [0, 0.08],
+            [0.05, 0.18],
+            [0.4, 0.27],
+            [0.7, 0.35],
+            [1, 0.32],
+        ],
+        "throttleSensitivity":1.25
+        "torqueReactionNodes:":["e1l","e2l","e4r"]
+        "energyStorage": "mainTank",
+        "requiredEnergyType":"gasoline",
+
+        //exhaust
+        "particulates":0.05
+        "instantAfterFireCoef": 1.0,
+        "sustainedAfterFireCoef": 1.75,
+
+        //cooling and oil system
+        "thermalsEnabled":true
+        "engineBlockMaterial":"aluminum"
+        "oilVolume":7
+
+        //engine durability
+        "cylinderWallTemperatureDamageThreshold":160
+        "headGasketDamageThreshold":1500000
+        "pistonRingDamageThreshold":1500000
+        "connectingRodDamageThreshold":2000000
+        
+        "maxTorqueRating": 440,
+        "maxOverTorqueDamage": 500,
+
+        //node beam interface
+        "waterDamage": {"[engineGroup]:":["engine_intake"]},
+        "radiator": {"[engineGroup]:":["radiator"]},
+        "engineBlock": {"[engineGroup]:":["engine_block"]},
+        "breakTriggerBeam":"engine",
+        "uiName":"Engine",
+		
+		"soundConfig": "soundConfig",
+    },
+    "soundConfig": {
+        "sampleName": "V8_2",
+        "mainGain": -18,
+        "maxLoadMix": 0.6,
+        "minLoadMix": 0,
+        "onLoadGain":1,
+        "offLoadGain":0.65,
+        "eqLowGain": -5,
+        "eqLowFreq": 150,
+        //"eqLowWidth": 0,
+        "eqHighGain": -5,
+        "eqHighFreq": 6000,
+        //"eqHighWidth": 0,
+        "lowCutFreq":90,
+        //"eqFundamentalGain": -15,
+    },	
+    "vehicleController": {
+        "clutchLaunchStartRPM":2400,
+        "clutchLaunchTargetRPM":3300,
+        "highShiftDownRPM":[0,0,0,4300,5200,5400,5600,5800]
+        "highShiftUpRPM":9400
+        "revMatchThrottle":0.4,
+    },
+    "flexbodies": [
+        ["mesh", "[group]:", "nonFlexMaterials"],
+        ["super_engine", ["coupe_engine"],[]{"pos":{"x":0,"y":-2.1,"z":0.1}}],
+		["super_header", ["coupe_engine"]]
+    ],
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //1.6L I4 Engine
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"selfCollision":false},
+         {"collision":true},
+         {"group":"coupe_engine"},
+         {"nodeWeight":16},
+         {"engineGroup":"engine_block"}
+         ["e1r", -0.17, -0.9, 0.29],
+         ["e1l", 0.17, -0.9, 0.29,{"chemEnergy":2000,"burnRate":0.39,"flashPoint":800,"specHeat": 0.1,"selfIgnitionCoef":false,"smokePoint":650,"baseTemp":"thermals","conductionRadius":0.13}],
+         ["e2r", -0.17, -1.63, 0.38],
+         ["e2l", 0.17, -1.63, 0.38,{"chemEnergy":2000,"burnRate":0.39,"flashPoint":800,"specHeat": 0.1,"selfIgnitionCoef":false,"smokePoint":650,"baseTemp":"thermals","conductionRadius":0.13}],
+         {"engineGroup":["engine_block","engine_intake"]}
+         {"nodeWeight":10},
+         ["e3r", -0.13, -0.93, 0.88],
+         ["e3l", 0.13, -0.93, 0.88,{"chemEnergy":2000,"burnRate":0.39,"flashPoint":800,"specHeat": 0.1,"selfIgnitionCoef":false,"smokePoint":650,"baseTemp":"thermals","conductionRadius":0.13}],
+         ["e4r", -0.13, -1.58, 0.88],
+         ["e4l", 0.13, -1.58, 0.88,{"isExhaust":"mainEngine","chemEnergy":2000,"burnRate":0.39,"flashPoint":800,"specHeat": 0.1,"selfIgnitionCoef":false,"smokePoint":650,"baseTemp":"thermals","conductionRadius":0.13}],
+         {"nodeWeight":3},
+         ["e5l", 0.29, -1.08, 0.92,{"chemEnergy":2000,"burnRate":0.39,"flashPoint":800,"specHeat": 0.5,"selfIgnitionCoef":false,"smokePoint":650,"baseTemp":"thermals","conductionRadius":0.13}],
+         ["e6l", 0.37, -1.48, 0.90,{"chemEnergy":2000,"burnRate":0.39,"flashPoint":800,"specHeat": 0.5,"selfIgnitionCoef":false,"smokePoint":650,"baseTemp":"thermals","conductionRadius":0.13}],
+         {"engineGroup":""}
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":15001000,"beamDamp":400},
+          {"beamDeform":175000,"beamStrength":"FLT_MAX"},
+          //engine
+          ["e1r","e1l"],
+          ["e2r","e2l"],
+          ["e3r","e3l"],
+          ["e4r","e4l"],
+
+          ["e1r","e2r"],
+          ["e1l","e2l"],
+          ["e3r","e4r"],
+          ["e3l","e4l"],
+
+          ["e1r","e3r"],
+          ["e1l","e3l"],
+          ["e2r","e4r"],
+          ["e2l","e4l"],
+
+          ["e2r","e3r"],
+          ["e2l","e3l"],
+          ["e2r","e3l"],
+          ["e2l","e3r"],
+
+          ["e1r","e4r"],
+          ["e1l","e4l"{"isExhaust":"mainEngine"}],
+          ["e1r","e4l"],
+          ["e1l","e4r"],
+
+          ["e1r","e2l"],
+          ["e1l","e2r"],
+          ["e3r","e4l"],
+          ["e3l","e4r"],
+
+          ["e1r","e3l"],
+          ["e1l","e3r"],
+          ["e2r","e4l"],
+          ["e2l","e4r"],
+          {"beamSpring":1840460,"beamDamp":145},
+          //air filter
+          {"beamDeform":8580,"beamStrength":"FLT_MAX"},
+          ["e4l", "e6l"],
+          ["e3l", "e5l"],
+          ["e6l", "e5l"],
+          ["e6l", "e2l"],
+          ["e5l", "e1l"],
+
+          ["e6l", "e3l"],
+          ["e5l", "e4l"],
+          ["e6l", "e1l"],
+          ["e2l", "e5l"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            {"groundModel":"metal"},
+            /*
+            ["e5l", "e1l", "e3l"],
+            ["e4r", "e3r", "e2r"],
+            ["e3r", "e1r", "e2r"],
+            ["e1r", "e1l", "e2r"],
+            ["e2r", "e1l", "e2l"],
+            ["e3l", "e1l", "e3r"],
+            ["e3r", "e1l", "e1r"],
+            ["e4r", "e4l", "e3l"],
+            ["e4r", "e3l", "e3r"],
+            ["e4r", "e2r", "e4l"],
+            ["e4l", "e2r", "e2l"],
+            ["e4l", "e2l", "e6l"],
+            ["e6l", "e3l", "e4l"],
+            ["e6l", "e2l", "e5l"],
+            ["e6l", "e5l", "e3l"],
+            ["e2l", "e1l", "e5l"],
+            */
+            {"triangleType":"NONCOLLIDABLE"},
+            ["e2l", "e2r", "e1r"],
+            ["e1r", "e1l", "e2l"],
+            {"triangleType":"NORMALTYPE"},
+    ],
+},
+}
