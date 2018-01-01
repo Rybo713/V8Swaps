@@ -1,0 +1,14 @@
+{
+    "modifiers":[
+      ["name", "source", "factor", "offset", "min", "max"], 
+      ["engine_throttle", "engineThrottle", 1, 0, 0.65, 1],
+      ["turbo_throttle", "throttle", 0.5, 0, 0.1, 0.4],
+    ], 
+    "sounds":[
+      ["group",   "filename",       "profile",            "nodeName", "source", "factor", "offset", "minVolume", "minPitch", "maxVolume", "maxPitch", "pitchBlendInStartValue", "pitchBlendInEndValue", "volumeBlendInStartValue",  "volumeBlendInEndValue", "volumeBlendOutStartValue", "volumeBlendOutEndValue", "volumeModifiers",   "pitchModifiers"],
+	  ["default", "vehicles/enginesounds/etki/V10_Idle.wav", "AudioDefaultLoop3D", "ENGINE",   "rpm",               1,        0,        0,           0,          0.7,           7.25,          0,                      8500,               500,                             1000,                      1000,                     3000,                   ["engine_throttle"], []              ],
+      ["default", "vehicles/enginesounds/etki/V10_Rev.wav", "AudioDefaultLoop3D", "ENGINE",   "rpm",    1,        0,        0,           0,          7,           1.90,          785,                      14000,               785,                          14000,                     785,                     14000,                   ["engine_throttle"], []              ],
+	  ["default", "vehicles/enginesounds/etki/limiter.wav", "AudioDefaultLoop3D", "ENGINE", "rpm",     1,         0,         0,         0.85,           1.70,        0.95,        0,                       21000,                       12000,                       12000,                       999998,                       999999,                     ["engine_redline"],       [] ],      
+      ["default", "vehicles/enginesounds/etki/TurboSpool.wav", "AudioDefaultLoop3D", "ENGINE",   "turboRpmRatio",      	2,        0,        0,           0,          1,        	  1,        0,                        1000,                   0,                          200,                     999998,                     99                  ["turbo_throttle"],  []              ],
+    ],
+}
