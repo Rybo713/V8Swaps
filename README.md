@@ -32,7 +32,21 @@ Maybe some engine sounds if you're lucky :)
 - A custom Gavril TCX Engine
 - Max RPM: 12000
 - Custom Linear Torque Curve
-- Custom turbos from ETK I-Series
+- Custom Turbos from Gavril TCX Engine
+
+<h3>Insane Stats of Semi (Not made up!):</h3>
+
+**Naturally Aspirated:**
+-  1164 bhp
+-  590 lb/ft
+
+**T300 Turbo:**
+-  5652 bhp
+-  2866 lb/ft
+
+**T600 Turbo:**
+-  11553 bhp
+-  5860 lb/ft
 
 
 # What Works?
