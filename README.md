@@ -29,7 +29,7 @@ Maybe some engine sounds if you're lucky :)
 
 <h3>Description of Semi:</h3>
 
-- A custom Gavril TCX Engine by AdamB
+- A custom Gavril TCX Engine
 - Max RPM: 12000
 - Custom Linear Torque Curve
 - Custom turbos from ETK I-Series
@@ -50,6 +50,8 @@ Maybe some engine sounds if you're lucky :)
 
 # What's in Progress?
 - Supra Sounds (2JZ) 
+- V8 Pigeon (Revision)
+- Gavril T-Series Diesel Swap (Revision)
 
 # What Still Needs Work?
 - ETK I-Series Semi Engine: Engine flies out when locked up while high rpm usage (not planning to fix due to fun factor)
@@ -92,10 +94,10 @@ Maybe some engine sounds if you're lucky :)
 5) Enjoy!
 
 # Credits
-By: Ryan Wong and Gregory Ocol and Adam B (Gavrii TCX Engine)
+By: Ryan Wong and Gregory Ocol
 
 Follow me on Twitter @RyanW713 for updates!
 
-Everything is open source. Credit @RyanW713 and @CanadianGreg and Adam B if code is copied
+Everything is open source. Credit @RyanW713 and @CanadianGreg
 
 No re-uploads.
