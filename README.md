@@ -1,8 +1,8 @@
-# BETA - SkidMarks-BeamNGMods 
+# V8Swaps-BeamNG
 
 Works on v0.6 and later
 
-Insane Engine Swaps for BeamNG Drive stock cars.
+Insane V8 Swaps for BeamNG Drive stock cars.
 Maybe some engine sounds if you're lucky :)
 
 <h3>Description of V8:</h3>
@@ -28,29 +28,6 @@ Maybe some engine sounds if you're lucky :)
 - 5108 bhp
 - 2267 lb/ft
 
-
-<h3>Description of Semi:</h3>
-
-- A custom Gavril TCX Engine
-- Max RPM: 12000
-- Custom Linear Torque Curve
-- Custom Turbos from Gavril TCX Engine
-
-<h3>Insane Stats of Semi (Not made up!):</h3>
-
-**Naturally Aspirated:**
--  1164 bhp
--  590 lb/ft
-
-**T300 Turbo:**
--  5652 bhp
--  2866 lb/ft
-
-**T600 Turbo:**
--  11553 bhp
--  5860 lb/ft
-
-
 # What Works?
 - V8 Ibishu Covet
 - V8 ETK I-Series
@@ -69,7 +46,7 @@ Maybe some engine sounds if you're lucky :)
 
 # What's in Progress?
 - Supra Sounds (2JZ) 
-- Gavril T-Series Diesel Swap (Revision)
+- Gavril T-Series Diesel Swap (Revision) For Progress: [Here](https://canadiangreg.github.io/DieselSwaps-BeamNG/)
 
 # What Still Needs Work?
 - ETK I-Series Semi Engine: Engine flies out when locked up while high rpm usage (not planning to fix due to fun factor)
