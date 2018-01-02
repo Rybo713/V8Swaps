@@ -112,8 +112,6 @@ Maybe some engine sounds if you're lucky :)
 # Credits
 By: Ryan Wong and Gregory Ocol
 
-Follow me on Twitter @RyanW713 for updates!
-
-Everything is open source. Credit @RyanW713 and @CanadianGreg
+Everything is open source. Credit @Rybo713 and @CanadianGreg
 
 No re-uploads.
