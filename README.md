@@ -12,6 +12,8 @@ Maybe some engine sounds if you're lucky :)
 - Custom Linear Torque Curve
 - Twin Turbos from Gavril D-Series @ 9.8 PSI (Configurable up to 48 PSI)
 
+**Note:** Twin Turbos have been taken out for now
+
 <h3>Insane Stats of V8 (Not made up!):</h3>
 
 **Naturally Aspirated:**
@@ -62,12 +64,12 @@ Maybe some engine sounds if you're lucky :)
 - V8 Miramar
 - V8 Gavril H-Series
 - V8 Pigeon
+- V8 '99 Ibishu Pessima
+- V8 SBR4
 
 # What's in Progress?
 - Supra Sounds (2JZ) 
 - Gavril T-Series Diesel Swap (Revision)
-- V8 '99 Ibishu Pessima
-- V8 SBR4
 
 # What Still Needs Work?
 - ETK I-Series Semi Engine: Engine flies out when locked up while high rpm usage (not planning to fix due to fun factor)
