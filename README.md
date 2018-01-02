@@ -51,7 +51,6 @@ Maybe some engine sounds if you're lucky :)
 - Gavril T-Series Diesel Swap (Revision) For Progress: [Here](https://canadiangreg.github.io/DieselSwaps-BeamNG/)
 
 # What Still Needs Work?
-- ETK I-Series Semi Engine: Engine flies out when locked up while high rpm usage (not planning to fix due to fun factor)
 - V8 Pigeon: Position is in the trunk, engine vibrates too much
 
 # Planned: 
