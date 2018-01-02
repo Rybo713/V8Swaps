@@ -109,7 +109,7 @@
     "flexbodies": [
         ["mesh", "[group]:", "nonFlexMaterials"],
         ["super_engine", ["miramar_engine"],[]{"pos":{"x":0,"y":-2.1,"z":0.1}}],
-		["super_header", ["miramar_engine"]]
+	["super_header", ["miramar_engine"],[]{"pos":{"x":0,"y":-2.1,"z":0.1}}],
     ],
     "nodes": [
          ["id", "posX", "posY", "posZ"],

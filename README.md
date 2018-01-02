@@ -66,14 +66,14 @@ Maybe some engine sounds if you're lucky :)
 # What's in Progress?
 - Supra Sounds (2JZ) 
 - Gavril T-Series Diesel Swap (Revision)
+- V8 '99 Ibishu Pessima
+- V8 SBR4
 
 # What Still Needs Work?
 - ETK I-Series Semi Engine: Engine flies out when locked up while high rpm usage (not planning to fix due to fun factor)
 - V8 Pigeon: Position is in the trunk, engine vibrates too much
 
 # Planned: 
-- V8 '99 Ibishu Pessima
-- V8 SBR4
 - AWD and RWD conversion on Covet
 
 # How to Install Mods?
