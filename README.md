@@ -53,7 +53,7 @@ Maybe some engine sounds if you're lucky :)
 - V8 Pigeon: Position is in the trunk, engine vibrates too much
 
 # Planned: 
-- AWD and RWD conversion on Covet
+- Nothing
 
 # How to Install Mods?
 1) Download the .jbeam file. 
