@@ -2,7 +2,8 @@
 
 Works on v0.6 and later
 
-Insane V8 Swaps for BeamNG Drive stock cars.
+Insane V8 Swaps for most stock cars.
+
 Maybe some engine sounds if you're lucky :)
 
 <h3>Description of V8:</h3>
