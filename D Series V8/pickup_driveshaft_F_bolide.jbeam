@@ -1,0 +1,28 @@
+{
+"pickup_driveshaft_F_bolide": {
+    "information":{
+        "authors":"BeamNG, Greg O, Ryan W",
+        "name":"Indestructible Front Driveshaft",
+        "value":150,
+    },
+    "slotType" : "pickup_driveshaft_F",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["pickup_frontshaft", ["pickup_framefront","pickup_framecab","pickup_lowermounts","pickup_uppermounts","pickup_shocktop"]],
+    ],
+    "powertrain" : [
+        ["type", "name", "inputName", "inputIndex"]
+        //front driveshaft
+        ["shaft", "driveshaft_F", "transfercase_F", 1, {"breakTriggerBeam":"driveshaft_F", "uiName":"Front Driveshaft", "electricsName":"driveshaft_F", "friction":1}]
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //driveshaft
+          {"beamPrecompression":1.0, "beamType":"|BOUNDED", "beamLongBound":0.05, "beamShortBound":0.05},
+          {"beamSpring":0,"beamDamp":0,"beamDeform":5050,"beamStrength":6570000000},
+          {"beamLimitSpring":10001000,"beamLimitDamp":1000},
+          ["fdiffl","tra1", {"name":"driveshaft_F","optional":true,"breakGroup":"driveshaft_F","deformGroup":"driveshaft_F"}],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+},
+}
