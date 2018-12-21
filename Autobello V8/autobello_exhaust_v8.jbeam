@@ -1,0 +1,191 @@
+{
+"super_exhaust_v8": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"Quad Exhaust",
+        "value":1100,
+    }
+    "slotType" : "super_exhaust",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["super_exhaust_R", ["super_exhaust_R"],[]{"pos":{"x":0,"y":2.25,"z":0}, "rot":{"x":0, "y":0, "z":180}}],
+         ["super_exhaust_L", ["super_exhaust_L"],[]{"pos":{"x":0,"y":2.25,"z":0}, "rot":{"x":0, "y":0, "z":180}}],
+    ],
+    "mainEngine":{
+        "torqueModExhaust":[
+            ["rpm", "torque"],
+            [0, 0],
+            [1000, -0],
+            [2000, -1.0],
+            [3000, -2.6],
+            [4000, -5],
+            [5000, -6],
+            [6000, -8],
+            [7000, -12],
+            [8000, -14],
+            [9000, -17],
+        ],
+    },
+    "nodes": [
+         ["id", "posX", "posY", "posZ"],
+         //exhaust
+         {"frictionCoef":0.5},
+         {"nodeMaterial":"|NM_METAL"},
+         {"nodeWeight":0.75},
+         {"collision":true}
+         {"selfCollision":true}
+         {"group":"super_exhaust_R"},
+         ["ex1r",-0.43, 0.96, 0.44{"selfCollision":false}],
+         ["ex2r",-0.4, 1.14, 0.18],
+         ["ex3r",-0.15, 1.22, 0.14],
+         ["ex4r",-0.15, 1.52, 0.14],
+         ["ex5r",-0.49, 1.56, 0.17],
+         ["ex6r",-0.465, 1.90, 0.244{"afterFireAudioCoef":0.25,"afterFireVisualCoef":0.3}],
+         ["ex6rr",-0.535, 1.90, 0.244{"afterFireAudioCoef":0.25,"afterFireVisualCoef":0.3}],
+
+         {"group":"super_exhaust_L"},
+         ["ex1l", 0.43, 0.96, 0.44{"selfCollision":false}],
+         ["ex2l", 0.4, 1.14, 0.18],
+         ["ex3l", 0.15, 1.22, 0.14],
+         ["ex4l", 0.15, 1.52, 0.14],
+         ["ex5l", 0.49, 1.56, 0.17],
+         ["ex6l", 0.465, 1.90, 0.244{"afterFireAudioCoef":0.25,"afterFireVisualCoef":0.3}],
+         ["ex6ll", 0.535, 1.90, 0.244{"afterFireAudioCoef":0.25,"afterFireVisualCoef":0.3}],
+         {"selfCollision":false}
+         {"collision":false}
+         {"group":""},
+         ["ex7r",-0.35, 1.35, 0.5],
+         ["ex7l", 0.35, 1.35, 0.5],
+         //{"isExhaust":"mainEngine"}
+         {"group":""},
+    ],
+    "beams": [
+          ["id1:", "id2:"],
+          //exhaust
+          {"beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+          {"beamSpring":801000,"beamDamp":250},
+          {"beamDeform":15000,"beamStrength":"FLT_MAX"},
+          //main shape
+          //right
+          ["ex1r", "ex2r"{"isExhaust":"mainEngine"}],
+          ["ex2r", "ex3r"{"isExhaust":"mainEngine"}],
+          ["ex3r", "ex4r"{"isExhaust":"mainEngine"}],
+          ["ex4r", "ex5r"{"isExhaust":"mainEngine"}],
+          ["ex5r", "ex6r"{"isExhaust":"mainEngine"}],
+          ["ex1r", "ex3r"],
+          ["ex2r", "ex4r"],
+          ["ex5r", "ex3r"],
+          ["ex6r", "ex4r"],
+
+          ["ex6rr", "ex5r"{"isExhaust":"mainEngine"}],
+          ["ex6rr", "ex4r"],
+          ["ex6rr", "ex3r"],
+          ["ex6rr", "ex6r"],
+
+          //left
+          ["ex1l", "ex2l"{"isExhaust":"mainEngine"}],
+          ["ex2l", "ex3l"{"isExhaust":"mainEngine"}],
+          ["ex3l", "ex4l"{"isExhaust":"mainEngine"}],
+          ["ex4l", "ex5l"{"isExhaust":"mainEngine"}],
+          ["ex5l", "ex6l"{"isExhaust":"mainEngine"}],
+          ["ex1l", "ex3l"],
+          ["ex2l", "ex4l"],
+          ["ex5l", "ex3l"],
+          ["ex6l", "ex4l"],
+
+          ["ex6ll", "ex5l"{"isExhaust":"mainEngine"}],
+          ["ex6ll", "ex4l"],
+          ["ex6ll", "ex3l"],
+          ["ex6ll", "ex6l"],
+
+          //rigids
+          {"beamSpring":401000,"beamDamp":250},
+          {"beamDeform":5000,"beamStrength":"FLT_MAX"},
+          ["ex6r", "ex3r"],
+          ["ex4r", "ex1r"],
+
+          ["ex6l", "ex3l"],
+          ["ex4l", "ex1l"],
+
+          //ridifier
+          {"beamDeform":5000,"beamStrength":"FLT_MAX"},
+          //right
+          ["ex1r", "ex7r"],
+          ["ex3r", "ex7r"],
+          ["ex2r", "ex7r"],
+          ["ex5r", "ex7r"],
+          ["ex4r", "ex7r"],
+          ["ex6r", "ex7r"],
+          ["ex6rr", "ex7r"],
+          //left
+          ["ex1l", "ex7l"],
+          ["ex3l", "ex7l"],
+          ["ex2l", "ex7l"],
+          ["ex5l", "ex7l"],
+          ["ex4l", "ex7l"],
+          ["ex6l", "ex7l"],
+          ["ex6ll", "ex7l"],
+
+          //attach to engine
+          {"beamSpring":801000,"beamDamp":250},
+          {"beamDeform":8000,"beamStrength":21000},
+          {"breakGroup":"exhaust_a_R"},
+          ["ex1r", "e4r"],
+          ["ex1r", "e3r"],
+          ["ex1r", "e1r"],
+          ["ex1r", "e2r"{"isExhaust":"mainEngine"}],
+          ["ex2r", "e2r"],
+          ["ex2r", "e1r"],
+          ["ex2r", "e3r"],
+          ["ex2r", "e4r"],
+          ["ex3r", "e2r"],
+          ["ex3r", "e1r"],
+
+          {"breakGroup":"exhaust_b_R"},
+          ["ex4r", "c6r"],
+          ["ex4r", "c6"],
+          ["ex4r", "c12"],
+          ["ex5r", "c12r"],
+
+
+          {"breakGroup":"exhaust_a_L"},
+          ["ex1l", "e4l"],
+          ["ex1l", "e3l"],
+          ["ex1l", "e1l"],
+          ["ex1l", "e2l"{"isExhaust":"mainEngine"}],
+          ["ex2l", "e2l"],
+          ["ex2l", "e1l"],
+          ["ex2l", "e3l"],
+          ["ex2l", "e4l"],
+          ["ex3l", "e2l"],
+          ["ex3l", "e1l"],
+
+          {"breakGroup":"exhaust_b_L"},
+          ["ex4l", "c6l"],
+          ["ex4l", "c6"],
+          ["ex4l", "c12"],
+          ["ex5l", "c12l"],
+          {"breakGroup":""},
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+    "triangles": [
+            ["id1:","id2:","id3:"],
+            {"group":"super_exhaust"},
+            {"groundModel":"metal"},
+            {"dragCoef":6},
+            //exhaust shape
+            {"triangleType":"NONCOLLIDABLE"},
+            ["ex6r", "ex4r", "ex5r"],
+            ["ex5r", "ex4r", "ex3r"],
+            ["ex3r", "ex2r", "ex5r"],
+            ["ex5r", "ex6rr", "ex6r"],
+
+            ["ex4l", "ex6l", "ex5l"],
+            ["ex4l", "ex5l", "ex3l"],
+            ["ex2l", "ex3l", "ex5l"],
+            ["ex5l", "ex6l", "ex6ll"],
+            {"triangleType":"NORMALTYPE"},
+            {"group":""},
+    ],
+}
+}

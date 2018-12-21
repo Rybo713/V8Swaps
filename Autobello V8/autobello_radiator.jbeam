@@ -1,0 +1,27 @@
+{
+"autobello_radiator": {
+    "information":{
+        "authors":"BeamNG",
+        "name":"High Performance Radiator",
+        "value":450,
+    }
+    "slotType" : "super_radiator",
+    "flexbodies": [
+         ["mesh", "[group]:", "nonFlexMaterials"],
+         ["super_radiator", ["engine"],[]{"pos":{"x":0,"y":0,"z":0.05}}]
+    ],
+    "mainEngine":{
+        "radiatorArea":0.3,
+        "radiatorEffectiveness":15000,
+        "coolantVolume":13.5,
+        "radiatorFanType":"electric",
+        "radiatorFanTemperature":100,
+        "radiatorFanMaxAirSpeed":3,
+        "thermostatTemperature":90
+    },
+    "beams": [
+          ["id1:", "id2:"],
+          {"beamPrecompression":1, "beamType":"|NORMAL", "beamLongBound":1.0, "beamShortBound":1.0},
+    ],
+}
+}
