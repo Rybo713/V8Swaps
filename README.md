@@ -45,16 +45,20 @@ Maybe some engine sounds if you're lucky :)
 - V8 Pigeon
 - V8 '99 Ibishu Pessima
 - V8 SBR4
+- V8 Autobello
 
 # What's in Progress?
+- V8 Autobello
 - Supra Sounds (2JZ) 
 - Gavril T-Series Diesel Swap (Revision) For Progress: [Here](https://canadiangreg.github.io/DieselSwaps-BeamNG/)
 
 # What Still Needs Work?
+- Every engine except v8 autobello needs to be updated for the new ecu and engine internal updates.
+- V8 Autobello: Work on scaling (maybe?), engine vibrates too much due to improper nodes/beams, same deal with the added radiator.
 - V8 Pigeon: Position is in the trunk, engine vibrates too much
 
 # Planned: 
-- Nothing
+- Autobello engine swaps for other cars!
 
 # How to Install Mods?
 1) Download the .jbeam file. 
